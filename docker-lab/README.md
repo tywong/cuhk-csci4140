@@ -8,10 +8,10 @@
 
 ## What is docker or Linux container?
 
-| Virtual Machine Environment | Use Docker |
-|-
-| ![](images/vm.png) | ![](images/docker.png) |
-| Under the VM setting, every VM is a full OS. | Under the Docker setting, every container is an isolated environment with shared kernel. |
+Virtual Machine Environment | Use Docker
+--------------------------- | ----------
+![](images/vm.png) | ![](images/docker.png) |
+Under the VM setting, every VM is a full OS. | Under the Docker setting, every container is an isolated environment with shared kernel. |
 
 
 - How do we know that the kernel is shared under a Docker environment? Let us take a look at the following pair of command outputs. Basically, I run the same command `uname -a` on two different Linux containers.
@@ -50,17 +50,16 @@ Clearly, Docker is a set of Linux commands and those Linux commands talk to the 
 In Mac OS X and Windows, the docker tool is sending commands to another docker daemon running inside VirtualBox. Therefore, Mac OS X and Windows are development environments; they are not perfect deployment / production environments using Docker.
 
 ## Vocabulary
-
-| Docker Vocabulary | Meaning |
-|-
-| Container | The Linux container, which is a process to the host Linux. |
-| Docker image | The file system for the container, which is a set of folders to the host Linux. |
-| Docker Hub | A public repository for docker images |
-| Docker pull | Download docker images |
-| Docker push | Upload docker images |
-| Docker run | Start a linux container |
-| Boot2docker | The outdate name for the Linux VM running on Virtualbox |
-| docker-machine | The latest name for the Linux VM running on Virtualbox |
+ Docker Vocabulary | Meaning
+ ----------------- | -------
+Container | The Linux container, which is a process to the host Linux.
+Docker image | The file system for the container, which is a set of folders to the host Linux
+Docker Hub | A public repository for docker images
+Docker pull | Download docker images
+Docker push | Upload docker images
+Docker run | Start a linux container
+Boot2docker | The outdate name for the Linux VM running on Virtualbox
+docker-machine | The latest name for the Linux VM running on Virtualbox
 
 We cannot cover everything here since most of the vocabulary is related to the commands and the executions of containers.
 
