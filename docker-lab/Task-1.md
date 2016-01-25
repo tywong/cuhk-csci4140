@@ -1,4 +1,4 @@
-# Task 1: Setup a web starter running CGI program
+# Task 1: Start Your First Docker
 
 ## Step 0. Launch the Docker VM
 
@@ -93,3 +93,27 @@ Let us start with the Ubuntu Image: [https://hub.docker.com/_/ubuntu/](https://h
   ```
 
 - Of course, we need the latest Ubuntu only.
+
+## Step 3. Try entering the container
+
+To go into the container, it means:
+
+1. We run the command `/bin/bash` inside the container.
+2. The command is:
+  ```
+  docker run -i -t ubuntu /bin/bash
+  ```
+    - `-i` means *interactive* using STDIN.
+    - `-t` means *allocate* a terminal for you.
+
+3. The outcome is an interactive shell like the following:
+  ```
+  root@0182501a921d:/# uname -a
+  Linux 0182501a921d 4.1.13-boot2docker #1 ... x86_64 GNU/Linux
+  ```
+  Type `uname -a` so that you can confirm that you are inside a Linux container.
+
+4. To leave this shell, you can type `exit` or `Ctrl + D`.
+
+---
+By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
