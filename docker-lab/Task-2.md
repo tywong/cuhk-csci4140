@@ -53,7 +53,7 @@ Notice that the **first column of the output is the container ID**.
 
 ## Isolated File Systems
 
-![Different FS](images/different-fs.png =300x)
+![Different FS](images/different-fs.png)
 
 With the creation of the file `/abc.txt`, you can observe that **different containers have different disks**. Though the containers may be coming from the same image, the file systems are separated.
 
