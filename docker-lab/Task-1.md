@@ -88,4 +88,8 @@ Let us start with the Ubuntu Image: [https://hub.docker.com/_/ubuntu/](https://h
   $ docker images
   REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
   ubuntu              latest              6cc0fc2a5ee3        5 days ago          187.9 MB
+  ubuntu              12.04               6b4adea2c00e        5 days ago          137.5 MB
+  $ _
   ```
+
+- Of course, we need the latest Ubuntu only.
