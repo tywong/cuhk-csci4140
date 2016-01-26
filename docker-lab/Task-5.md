@@ -70,7 +70,10 @@ ScriptAlias /cgi-bin/ /var/www/html/cgi-bin/
 14. To test if the container is up, use your browser to visit the web server. E.g., `http://192.168.99.100/`
 
 15. To test if the CGI support is successfully done, visit the URL with the postfix `cgi-bin`. You should be able to see the following:
+
   ![CGI support successful](images/cgi-support.png)
+
+---
 
 ## Lots of Stress and now what?
 
