@@ -47,6 +47,6 @@ Let us try out the above commands one by one!
   docker rmi stranger/web-server
   ```
 
-Remember, you must keep your image with `apache2 installed`.
+Remember, you must keep your image with `apache2` installed.
 ---
 By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
