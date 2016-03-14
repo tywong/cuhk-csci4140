@@ -1,4 +1,4 @@
-# Set Up a Node JS Development Environment
+# Task 0: Set Up a Node JS Development Environment
 
 Writing React JS application is done in the Node JS environment. Therefore, you have to install Node JS. How? I recommend the use of Docker!  
 
@@ -38,3 +38,6 @@ We have a sample React JS project implemented: it is the [Othello game](https://
 You should be able to see the following screen and can play on the game interface!
 
 ![Othello](../images/othello.png)
+
+---
+By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
