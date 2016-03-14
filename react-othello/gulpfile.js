@@ -31,7 +31,8 @@ gulp.task('bundle', function() {
 
 gulp.task('clean', function() {
   return del([
-      'public/js/bundle.js'
+      'public/js/bundle.js',
+      'public/css/*'
     ]);
 });
 
