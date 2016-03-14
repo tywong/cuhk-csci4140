@@ -12,8 +12,8 @@ var GameScore = React.createClass({
   render: function() {
     var count = GameLogic.count(this.props.board);
     return (
-      <div className="footerCell">
-        <p className="footerText">
+      <div className="panelCell">
+        <p className="panelText">
           {this.props.playerName['O']} : {count['O']}
           <br/>
           {this.props.playerName['@']} : {count['@']}

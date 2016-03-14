@@ -13,8 +13,8 @@ var Dimension = Immutable.Map({
   'circleHeight': 72,
   'chartWidth': 200,
   'chartHeight': 200,
-  'footerWidth': 200,
-  'footerHeight': 640
+  'panelWidth': 200,
+  'panelHeight': 640
 });
 
 module.exports = Dimension;

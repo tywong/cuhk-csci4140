@@ -33,8 +33,8 @@ var GameOverDisplay = React.createClass({
 
     return (
       <div className="turnDisplay" style={divStyle}>
-        <div className="footerCell">
-          <p className="footerText">
+        <div className="panelCell">
+          <p className="panelText">
             <br/>
             {label}
             <br/>
@@ -43,7 +43,7 @@ var GameOverDisplay = React.createClass({
           </p>
         </div>
 
-        <div className="footerCell" style={btnStyle}>
+        <div className="panelCell" style={btnStyle}>
           <button
             type="button" className="btn btn-primary"
             onClick={this.props.onNewGame}

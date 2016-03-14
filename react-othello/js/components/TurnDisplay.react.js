@@ -7,13 +7,13 @@ var TurnDisplay = React.createClass({
   'render': function() {
     return (
       <div className="turnDisplay">
-        <div className="footerCell">
-          <p className="footerText">
+        <div className="panelCell">
+          <p className="panelText">
             Current Turn
           </p>
         </div>
 
-        <div className="footerCell">
+        <div className="panelCell">
           <Circle data={this.props.turn} />
         </div>
       </div>

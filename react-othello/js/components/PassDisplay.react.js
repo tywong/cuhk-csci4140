@@ -23,8 +23,8 @@ var PassDisplay = React.createClass({
 
     return (
       <div className="turnDisplay" style={divStyle}>
-        <div className="footerCell" style={btnStyle}>
-          <p className="footerText">
+        <div className="panelCell" style={btnStyle}>
+          <p className="panelText">
             <br/>
             {this.props.playerName}
             <br/>
@@ -32,7 +32,7 @@ var PassDisplay = React.createClass({
           </p>
         </div>
 
-        <div className="footerCell" style={btnStyle}>
+        <div className="panelCell" style={btnStyle}>
           <button
             type="button" className="btn btn-danger"
             onClick={this.props.onConfirmPass}

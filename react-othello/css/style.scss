@@ -65,7 +65,7 @@
 	float: left;
 }
 
-.footer {
+.panel {
 	font-family: cabin, sans-serif;
 	float: left;
 	padding: 0;
@@ -74,15 +74,15 @@
 	background-color: #ddd;
 }
 
-.footer .footerCell {
+.panel .panelCell {
 	margin: 10px;
 }
 
-.footerCell p {
+.panelCell p {
 	text-align: center;
 }
 
-.footer .footerText {
+.panel .panelText {
 	font-family: cabin, sans-serif;
 	font-weight: 700;
 	font-size: 1.4em;

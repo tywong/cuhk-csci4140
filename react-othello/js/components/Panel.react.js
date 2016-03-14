@@ -23,14 +23,14 @@ var Panel = React.createClass({
 
   render: function() {
 
-    var footerStyle = {
-      'width': Dimension.get('footerWidth') + "px",
-      'height': Dimension.get('footerHeight') + "px",
+    var panelStyle = {
+      'width': Dimension.get('panelWidth') + "px",
+      'height': Dimension.get('panelHeight') + "px",
     };
 
     if(GameLogic.isEndGame(this.props.gameState.board)) {
       return (
-        <div className="footer" style={footerStyle}>
+        <div className="panel" style={panelStyle}>
           <TurnDisplay turn={this.props.gameState.turn} />
           <GameOverDisplay
             board={this.props.gameState.board}
@@ -46,7 +46,7 @@ var Panel = React.createClass({
     }
     else {
       return (
-        <div className="footer" style={footerStyle}>
+        <div className="panel" style={panelStyle}>
           <TurnDisplay turn={this.props.gameState.turn} />
           <PassDisplay
             playerName={this.props.gameState.playerName[this.props.gameState.turn]}
