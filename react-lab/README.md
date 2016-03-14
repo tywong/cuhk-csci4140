@@ -15,3 +15,5 @@ In this lab, you will go through steps in transforming an HTML page into an Reac
 3. Next, we hard code the game state so as to see if the correct game layout is displayed accordingly.
 
 4. Last, we introduce the change of the game state.
+
+5. By the way, we did not talk about the game logic. Well, it depends on the time in the lab. Probably, we will skip the implementation of the game logic.
