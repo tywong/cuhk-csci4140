@@ -23,7 +23,7 @@ In this lab, you will go through steps in transforming an HTML page into an Reac
 7. By the way, we did not talk about the game logic. Well, it depends on the time in the lab. Probably, we will skip the implementation of the game logic.
 
 
-For more details, you are always welcome to read the [official documentation of React JS by Facebook](https://facebook.github.io/react/docs/tutorial.html).
+For more details, you are always welcome to read the [official documentation of React JS by Facebook](https://facebook.github.io/react/docs/getting-started.html).
 
 ---
 By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
