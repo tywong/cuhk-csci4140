@@ -45,7 +45,7 @@ Once you type docker commands, the docker daemon translates them into [LXC comma
 
 Clearly, Docker is a set of Linux commands and those Linux commands talk to the Linux kernel. Does it mean that Mac OS X and Windows do not have the chance to use Docker?
 
-[!Docker in Mac](images/docker-mac.png)
+![Docker in Mac](images/docker-mac.png)
 
 In Mac OS X and Windows, the docker tool is sending commands to another docker daemon running inside VirtualBox. Therefore, Mac OS X and Windows are development environments; they are not perfect deployment / production environments using Docker.
 
