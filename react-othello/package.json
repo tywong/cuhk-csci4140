@@ -1,0 +1,39 @@
+{
+  "name": "react-othello",
+  "version": "1.0.0",
+  "repository": "https://github.com/tywong/react-othello",
+  "description": "Othello (reversi) implementation with Flux and React",
+  "main": "js/app.js",
+  "author": "WONG Tsz-Yeung",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.1",
+    "flux": "^2.1.1",
+    "handlebars": "^3.0.3",
+    "immutable": "^3.7.4",
+    "keymirror": "^0.1.1",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3",
+    "react-google-charts": "^0.1.4",
+    "socket.io": "^1.3.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^5.2.0",
+    "browserify": "^11.0.1",
+    "del": "^1.2.1",
+    "envify": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-exec": "^2.1.1",
+    "gulp-postcss": "^5.1.10",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.2.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "watchify -o public/js/bundle.js -v -d js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
