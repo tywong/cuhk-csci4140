@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.13.1",
     "flux": "^2.1.1",
+    "gulp-watch": "^4.3.5",
     "handlebars": "^3.0.3",
     "immutable": "^3.7.4",
     "keymirror": "^0.1.1",
