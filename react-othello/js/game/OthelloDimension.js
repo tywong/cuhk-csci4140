@@ -1,6 +1,4 @@
-var Immutable = require('immutable');
-
-var Dimension = Immutable.Map({
+var Dimension = {
   'gameWidth': 1200,
   'gameHeight': 800,
   'gridWidth': 650,
@@ -14,7 +12,10 @@ var Dimension = Immutable.Map({
   'chartWidth': 200,
   'chartHeight': 200,
   'panelWidth': 200,
-  'panelHeight': 640
-});
+  'panelHeight': 640,
+  'get': function(val) {
+    return this[val] ? this[val] : undefined;
+  }
+};
 
 module.exports = Dimension;

@@ -1,9 +1,4 @@
-var EventEmitter = require('events').EventEmitter;
-var assign = require('object-assign');
-var Dimension = require('./OthelloDimension');
 var GameLogic = require('./GameLogic');
-
-var CHANGE_EVENT = 'change';
 
 //// Declare game state ////
 
@@ -14,11 +9,17 @@ var playerName = {
   '@': "Black"
 };
 
+var game = null;
+
 //// Define Store ////
 
-var OthelloStore = assign({}, EventEmitter.prototype, {
+var OthelloStore = {
 
-  'getState': function() {
+  setGame: function(obj) {
+    game =  obj;
+  },
+
+  getState: function() {
     return {
       'board': board,
       'turn': turn,
@@ -26,20 +27,15 @@ var OthelloStore = assign({}, EventEmitter.prototype, {
     };
   },
 
-  'emitChange': function() {
-    this.emit(CHANGE_EVENT);
-  },
 
-  'addChangeListener': function(callback) {
-    this.on(CHANGE_EVENT, callback);
-  },
-
-  'update': function(b, t) {
+  update: function(b, t) {
     if(b !== null)
       board = b;
     if(t !== null)
       turn = t;
+
+    game.setState(this.getState());
   }
-});
+};
 
 module.exports = OthelloStore;

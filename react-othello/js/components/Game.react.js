@@ -7,20 +7,9 @@ var OthelloActions = require('../game/OthelloActions');
 
 var Game = React.createClass({
 
-  'getInitialState': function() {
+  getInitialState: function() {
+    OthelloStore.setGame(this);
     return OthelloStore.getState();
-  },
-
-  componentDidMount: function() {
-    OthelloStore.addChangeListener(this._onChange);
-  },
-
-  componentWillUnmount: function() {
-    OthelloStore.removeChangeListener(this._onChange);
-  },
-
-  _onChange: function() {
-    this.setState(OthelloStore.getState());
   },
 
   handleClick: function(e) {

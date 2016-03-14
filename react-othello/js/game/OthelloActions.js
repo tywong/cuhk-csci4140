@@ -14,17 +14,17 @@ var OthelloActions = {
         GameLogic.nextTurn(state.turn)
       );
 
-      OthelloStore.emitChange();
     }
   },
+
   pass: function() {
     var state = OthelloStore.getState();
     OthelloStore.update(
       null,
       GameLogic.nextTurn(state.turn)
     );
-    OthelloStore.emitChange();
   },
+
   newGame: function() {
     window.location.reload();
   }
