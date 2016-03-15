@@ -48,7 +48,7 @@ ReactDOM.render(
 );
 ```
 
-## Updating the setState
+## Updating the state by setState
 
 To update the state, call: `this.setState`.
 
