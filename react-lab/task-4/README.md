@@ -1,6 +1,6 @@
 # Adding All Together
 
-![React State Propagating](images/react-state.png)
+![React State Propagating](../images/react-state.png)
 
 The combined source code is laid out as follows.
 

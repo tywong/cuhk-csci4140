@@ -108,7 +108,7 @@ var classNames = require('classnames');
 
 var Circle = React.createClass({
 	render: function() {
-    var circleClassName = classnames("circle", "white");
+    var circleClassName = classNames("circle", "white");
 		return (
 			<div className={circleClassName}>
 			</div>
