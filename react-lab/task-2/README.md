@@ -54,14 +54,75 @@ ReactDOM.render(
 
 If it is not clear to you, please note that the above code is a JavaScript running in the Node JS environment. (Can you see those `require` statements?)
 
-However, the above code does not really look like a Node JS file. Can you see the **raw HTML tags** inside the JavaScript code?  Also, how about the `<Circle />` tag?  This file is called a JSX file. We need to translate /compile a JSX file into a JavaScript file.
+However, the above code does not really look like a Node JS file. Can you see the **raw HTML tags** inside the JavaScript code?  Also, how about the `<Circle />` tag?  This file is called a JSX file. We need to translate / compile  such a JSX file into a JavaScript file.
 
-### Preparation for compiling JSX files
+### Compiling JSX files
+
+First, go to the `node-project` directory. Then, install the libraries for the project directory.
 
 ```
+cd task-2/node-project
 npm install --save react react-dom babelify babel-preset-react
+```
+
+Also, install `browserify` as a globally-available command.
+
+```
 npm install -g browserify
 ```
+
+Last, we compile the Node, JSX file into the JS file called `bundle.js`.
+
+```
+browserify -t [ babelify --presets [ react ] ] Circle.react.js -o bundle.js
+```
+
+## Running the Example
+
+```
+task-2/
+   +
+   |
+   |--> index.html
+   |
+   |--> node-project/
+             +
+             |
+             |--> Circle.react.js
+             |
+             |--> bundle.js
+```
+
+Referring back to the `index.html`, we will include the `bundle.js` and run the example.
+
+## Changing the class of Circle's div
+
+You know, we can modify the class of the Circle's div to `circle white` and `circle black` in order to display a white circle and a black circle respectively.
+
+To add multiple class names, please refer to the Node JS library [classnames](https://github.com/JedWatson/classnames).
+
+```javascript
+var React = require('react');
+var ReactDOM = require('react-dom');
+var classNames = require('classnames');
+
+var Circle = React.createClass({
+	render: function() {
+    var circleClassName = classnames("circle", "white");
+		return (
+			<div className={circleClassName}>
+			</div>
+		);
+	}
+});
+
+ReactDOM.render(
+	<Circle />,
+	document.getElementById('display')
+);
+```
+
+After the modification, please compile the new JSX code again by the following command:
 
 ```
 browserify -t [ babelify --presets [ react ] ] Circle.react.js -o bundle.js
