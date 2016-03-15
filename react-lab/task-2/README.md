@@ -127,3 +127,6 @@ After the modification, please compile the new JSX code again by the following c
 ```
 browserify -t [ babelify --presets [ react ] ] Circle.react.js -o bundle.js
 ```
+
+---
+By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)

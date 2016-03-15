@@ -13,14 +13,14 @@ To create a state for the component,
 
 To access the state: `this.state`.
 
----
+
 
 Let us take a look at the following example:
 
 - Set the color to white?
 - Set the color to black?
 
-```
+```javascript
 var React = require('react');
 var ReactDOM = require('react-dom');
 var classNames = require('classnames');
@@ -58,7 +58,7 @@ Let us run the following example:
 - However, this code has a problem. Do you know what it is?
 
 
-```
+```javascript
 var React = require('react');
 var ReactDOM = require('react-dom');
 var classNames = require('classnames');
@@ -92,3 +92,6 @@ ReactDOM.render(
 	document.getElementById('display')
 );
 ```
+
+---
+By [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
