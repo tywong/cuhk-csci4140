@@ -5,7 +5,7 @@ var classNames = require('classnames');
 var Circle = React.createClass({
 	render: function() {
 		return (
-			<div className="circle">
+			<div className="circle white">
 			</div>
 		);
 	}
