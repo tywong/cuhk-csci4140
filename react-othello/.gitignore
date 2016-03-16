@@ -31,11 +31,7 @@ node_modules
 
 public/js/bundle.js
 
-public/css
-
 .sass-cache
-
-*.css
 
 *.map
 

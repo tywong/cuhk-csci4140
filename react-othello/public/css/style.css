@@ -1,0 +1,101 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:700);
+.circle-container {
+  position: relative;
+  perspective: 1000;
+  margin: 0px auto; }
+
+.trans {
+  transform: rotate3d(45, 45, 0, 180deg); }
+
+.clickable {
+  cursor: pointer; }
+
+.front, .back {
+  backface-visibility: hidden;
+  background-color: transparent; }
+
+.circle {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.circle {
+  position: relative;
+  margin: auto;
+  margin-top: 5px; }
+
+.front, .back {
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+.front {
+  background-color: #fff;
+  color: #777777; }
+
+.front p, .back p {
+  margin-top: 22px;
+  font-family: cabin, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-align: center; }
+
+.back {
+  transform: rotate3d(45, 45, 0, 180deg);
+  background-color: #111111;
+  color: #aaaaaa; }
+
+.grid {
+  margin: auto;
+  float: left; }
+
+.panel {
+  font-family: cabin, sans-serif;
+  float: left;
+  padding: 0;
+  margin: 0;
+  padding-right: 10px;
+  background-color: #ddd; }
+
+.panel .panelCell {
+  margin: 10px; }
+
+.panelCell p {
+  text-align: center; }
+
+.panel .panelText {
+  font-family: cabin, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  text-align: center; }
+
+.cell {
+  border: 1px solid #ccc;
+  border-width: 1px 0 0 1px;
+  background-color: green;
+  float: left;
+  font-family: monaco; }
+
+.cell .cellInfo {
+  position: absolute;
+  color: #aaaaaa;
+  border: 0;
+  display: inline; }
+
+.game {
+  margin: auto; }
+
+.gameChart {
+  margin: auto;
+  float: left;
+  display: inline; }
+
+.turnDisplay {
+  margin: auto; }
