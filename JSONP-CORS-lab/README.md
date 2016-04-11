@@ -45,13 +45,15 @@ To upload such information, there are two choices:
 	- The tracking script may be used by any sites in the Internet.
 	- Then, SOP disallows us to send AJAX request to a different hosts. E.g., if CUHK is using GA service, then the upload of the tracking information has to be done by JSONP due to the SOP restriction.
 
-Fortunately, on the server side, we can implement **CORS - cross origin resource sharing**. By adding the following header in the HTTP response message:
+	Fortunately, on the server side, we can implement **CORS - cross origin resource sharing**. By adding the following header in the HTTP response message:
 
-```
-Access-Control-Allow-Origin: *
-```
+	```
+	Access-Control-Allow-Origin: *
+	```
 
-The client can use POST method with AJAX to upload data!
+	The client can use POST method with AJAX to upload data!
+
+Let's try both implementations!
 
 ---
 [Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
