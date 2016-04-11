@@ -1,4 +1,4 @@
-# Task 0 - Projec Setup
+# Task 0 - Project Setup
 
 In this lab, we will be writing Heroku application in Node.JS and Express.JS.
 
@@ -24,7 +24,7 @@ In this lab, we will be writing Heroku application in Node.JS and Express.JS.
 
 	Whether you want a remote repo on Github or not is up to you.
 
-4. Install the heroku toolbelt if you don't have it:
+4. Install the **Heroku toolbelt** if you don't have it:
 
 	[Heroku tutorial on deploying Node.JS application](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
@@ -37,13 +37,13 @@ In this lab, we will be writing Heroku application in Node.JS and Express.JS.
 	heroku create
 	```
 
-	Create the `Procfile` with the following content
+6. Create the `Procfile` with the following content
 
 	```
 	PORT=5000
 	```
 
-6. Test run your Express JS project:
+7. Test run your Express JS project:
 
 	- **Local trial**. First, type:
 
@@ -66,3 +66,6 @@ In this lab, we will be writing Heroku application in Node.JS and Express.JS.
 		```
 
 	On both trials, you will see the sentences `Express` and `Welcome to Express`.
+
+---
+[Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
