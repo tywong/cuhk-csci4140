@@ -36,9 +36,9 @@ To upload such information, there are two choices:
 
 1. **JSONP**. The URL for the JSONP requst already embeds information required by the tracking script. E.g., the following figure is the resulting request seen by the Developer Tool of Google Chrome visiting a GA script-enabled site:
 
-![GA script](images/jsonp.png)
+	![GA script](images/jsonp.png)
 
-The only disadvantage is that the URL with the query parameter has a length limit imposed on the server side. The server which accepts such data must be able to handle a long list of parameters.
+	The only disadvantage is that the URL with the query parameter has a length limit imposed on the server side. The server which accepts such data must be able to handle a long list of parameters.
 
 2. **AJAX**. With a AJAX, we can choose to use the POST method so as to solve the server-side URL length limit problem. Yet:
 
