@@ -2,7 +2,7 @@
 
 In this lab, we will be writing Heroku application in Node.JS and Express.JS. Such a project is to provide a server space in order to implement the following flow:
 
-
+![JSONP Flow](../images/jsonp-flow.png)
 
 1. Install the **express-generator**: `npm install -g express-generator`
 
