@@ -76,3 +76,6 @@ We are going to set up a router so that there are at least two services:
 	- Visit the link `http://your-project.herokuapp.com/api/ajax` using the POST method. If you do not know how, please refer to the image below:
 
 	![Postman](../images/postman.png)
+
+---
+[Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
