@@ -43,14 +43,36 @@ We are going to set up a router so that there are at least two services:
 	var express = require('express');
 	var router = express.Router();
 
-	router.routes('/jsonp').get(function(req, res) {
+	router.route('/jsonp').get(function(req, res) {
 		console.log("request received");
 		res.send("console.log('request received');");
 	});
 
-	router.routes('/ajax').post(function(req, res) {
+	router.route('/ajax').post(function(req, res) {
 		res.send({msg: 'request received'});
 	});
 
 	module.exports = router;
 	```
+
+4. Let us push the new code to Heroku:
+
+	```
+	cd ..         ## go back to the home of the application
+	git add --all 
+	git commit -m "Added a new router: api"
+	git push heroku master
+	heroku open
+	```
+
+5. Test the JSONP link with GET method. How?  Just open the following link in your browser: `http://your-project.herokuapp.com/api/jsonp`
+
+6. Test the AJAX link with POST method. How?
+
+	- Install [Postman, a Chrome Extension]{https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en}
+
+	- Laucnh Postman on your computer.
+
+	- Visit the link `http://your-project.herokuapp.com/api/ajax` using the POST method. If you do not know how, please refer to the image below:
+
+	![Postman](images/postman.png)
