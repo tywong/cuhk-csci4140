@@ -34,9 +34,6 @@ function tracker() {
 window.addEventListener("load", tracker, false);
 ```
 
----
-[Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
-
 ## Write a testing HTML page inside the project
 
 Let's write a testing HTML, called `test_jsonp.html` to trigger the download of `trace_jsonp.js`:
@@ -63,3 +60,7 @@ Let's write a testing HTML, called `test_jsonp.html` to trigger the download of 
 ## Any possible processing inside trace_jsonp.js?
 
 Of course, you can refer to [our example tracking script](https://github.com/tywong/csci4140-analytics/blob/master/public/js/trace_jsonp.js) to learn how we can read the cookie stored inside browser, and then embed it inside the JSONP request.
+
+---
+[Dr. WONG Tsz Yeung](http://www.cse.cuhk.edu.hk/~tywong)
+
