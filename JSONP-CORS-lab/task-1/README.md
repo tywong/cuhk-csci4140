@@ -34,3 +34,23 @@ We are going to set up a router so that there are at least two services:
 		## Add one new line ##
 		app.use('/api', api);
 		```
+
+2. In the `routes` directory, let us create a new file called `api.js`. Note that the __name is important__ because it has to be the same as the added `require` statement.
+
+3. Let us edit the file `api.js`:
+
+	```javascript
+	var express = require('express');
+	var router = express.Router();
+
+	router.routes('/jsonp').get(function(req, res) {
+		console.log("request received");
+		res.send("console.log('request received');");
+	});
+
+	router.routes('/ajax').post(function(req, res) {
+		res.send({msg: 'request received'});
+	});
+
+	module.exports = router;
+	```
