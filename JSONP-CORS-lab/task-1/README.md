@@ -69,10 +69,10 @@ We are going to set up a router so that there are at least two services:
 
 6. Test the AJAX link with POST method. How?
 
-	- Install [Postman, a Chrome Extension]{https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en}
+	- Install [Postman, a Chrome Extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
 
 	- Laucnh Postman on your computer.
 
 	- Visit the link `http://your-project.herokuapp.com/api/ajax` using the POST method. If you do not know how, please refer to the image below:
 
-	![Postman](images/postman.png)
+	![Postman](../images/postman.png)
