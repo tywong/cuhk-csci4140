@@ -66,7 +66,7 @@ If you wish to allow the AJAX script works when testing the program under the lo
 
 ```javascript
 router.route('/ajax').post(function(req, res) {
-	res.setHeader("Access-Control-Allow-Origin", "*");  ## new stuff
+	res.setHeader("Access-Control-Allow-Origin", "*");  // new stuff
     res.send({msg: 'request received'});
 });
 ```
