@@ -55,6 +55,20 @@ We are going to set up a router so that there are at least two services:
 	module.exports = router;
 	```
 
+	For your interest,
+
+	- you can obtain the IP address of the client using:
+
+	```javascript
+	var ipAddr = (req.headers['x-forwarded-for'] || req.connection.remoteAddress);
+	```
+
+	- you can obtain the HTTP Referer of the client using:
+
+	```javascript
+	var referer = req.headers['referer'] || "no referer";
+	```
+
 4. Let us push the new code to Heroku:
 
 	```
