@@ -1,6 +1,8 @@
 # Task 0 - Project Setup
 
-In this lab, we will be writing Heroku application in Node.JS and Express.JS.
+In this lab, we will be writing Heroku application in Node.JS and Express.JS. Such a project is to provide a server space in order to implement the following flow:
+
+
 
 1. Install the **express-generator**: `npm install -g express-generator`
 
